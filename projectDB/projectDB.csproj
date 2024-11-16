@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8B50A33D-EA15-49D2-99A0-756DE05A216D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>projectDB</RootNamespace>
+    <AssemblyName>projectDB</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin_portal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_portal.Designer.cs">
+      <DependentUpon>admin_portal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_regis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_regis.Designer.cs">
+      <DependentUpon>admin_regis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssignTaskLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssignTaskLD.Designer.cs">
+      <DependentUpon>AssignTaskLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editprofile_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editprofile_admin.Designer.cs">
+      <DependentUpon>Editprofile_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editprofile_faculty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editprofile_faculty.Designer.cs">
+      <DependentUpon>Editprofile_faculty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editprofile_LD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editprofile_LD.Designer.cs">
+      <DependentUpon>Editprofile_LD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editprofile_TA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editprofile_TA.Designer.cs">
+      <DependentUpon>Editprofile_TA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="faculty_portal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="faculty_portal.Designer.cs">
+      <DependentUpon>faculty_portal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="faculty_regis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="faculty_regis.Designer.cs">
+      <DependentUpon>faculty_regis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiveFeedbackLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiveFeedbackLD.Designer.cs">
+      <DependentUpon>GiveFeedbackLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiveFeedbackTA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiveFeedbackTA.Designer.cs">
+      <DependentUpon>GiveFeedbackTA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LD_courses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LD_courses.Designer.cs">
+      <DependentUpon>LD_courses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LD_portal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LD_portal.Designer.cs">
+      <DependentUpon>LD_portal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manageLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manageLD.Designer.cs">
+      <DependentUpon>manageLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manageTA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manageTA.Designer.cs">
+      <DependentUpon>manageTA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TA_courses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TA_courses.Designer.cs">
+      <DependentUpon>TA_courses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ta_ld_regis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ta_ld_regis.Designer.cs">
+      <DependentUpon>ta_ld_regis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TA_portal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TA_portal.Designer.cs">
+      <DependentUpon>TA_portal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateallocations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateallocations.Designer.cs">
+      <DependentUpon>updateallocations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssigntaskTA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssigntaskTA.Designer.cs">
+      <DependentUpon>AssigntaskTA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateTaskLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateTaskLD.Designer.cs">
+      <DependentUpon>UpdateTaskLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateTaskTA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateTaskTA.Designer.cs">
+      <DependentUpon>updateTaskTA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewfeedbackLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewfeedbackLD.Designer.cs">
+      <DependentUpon>viewfeedbackLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewfeedbackTA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewfeedbackTA.Designer.cs">
+      <DependentUpon>viewfeedbackTA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views.Designer.cs">
+      <DependentUpon>Views.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewyourCoursesLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewyourCoursesLD.Designer.cs">
+      <DependentUpon>viewyourCoursesLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewyourCourseTA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewyourCourseTA.Designer.cs">
+      <DependentUpon>viewyourCourseTA.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="admin_portal.resx">
+      <DependentUpon>admin_portal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_regis.resx">
+      <DependentUpon>admin_regis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssignTaskLD.resx">
+      <DependentUpon>AssignTaskLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editprofile_admin.resx">
+      <DependentUpon>Editprofile_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editprofile_faculty.resx">
+      <DependentUpon>Editprofile_faculty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editprofile_LD.resx">
+      <DependentUpon>Editprofile_LD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editprofile_TA.resx">
+      <DependentUpon>Editprofile_TA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="faculty_portal.resx">
+      <DependentUpon>faculty_portal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="faculty_regis.resx">
+      <DependentUpon>faculty_regis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiveFeedbackLD.resx">
+      <DependentUpon>GiveFeedbackLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiveFeedbackTA.resx">
+      <DependentUpon>GiveFeedbackTA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LD_courses.resx">
+      <DependentUpon>LD_courses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LD_portal.resx">
+      <DependentUpon>LD_portal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manageLD.resx">
+      <DependentUpon>manageLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manageTA.resx">
+      <DependentUpon>manageTA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TA_courses.resx">
+      <DependentUpon>TA_courses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ta_ld_regis.resx">
+      <DependentUpon>ta_ld_regis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TA_portal.resx">
+      <DependentUpon>TA_portal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateallocations.resx">
+      <DependentUpon>updateallocations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssigntaskTA.resx">
+      <DependentUpon>AssigntaskTA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateTaskLD.resx">
+      <DependentUpon>UpdateTaskLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateTaskTA.resx">
+      <DependentUpon>updateTaskTA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewfeedbackLD.resx">
+      <DependentUpon>viewfeedbackLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewfeedbackTA.resx">
+      <DependentUpon>viewfeedbackTA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views.resx">
+      <DependentUpon>Views.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewyourCoursesLD.resx">
+      <DependentUpon>viewyourCoursesLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewyourCourseTA.resx">
+      <DependentUpon>viewyourCourseTA.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2023-11-23 at 3.06.47 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v915-wit-011-k.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abstract-blur-hotel-interior.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\libbg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nucesbg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nucesbg1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nucesbg2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgart.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BGBLUR.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BGBLURBLUR.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logofast.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\selection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\decide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check-list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clipboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\review.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\books.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\human-resources.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delegation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\management.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\software-engineer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\previous.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spreadsheet-app.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
